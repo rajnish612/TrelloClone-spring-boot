@@ -1,14 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import WorkSpace from "./components/workspace/WorkSpace";
-import BoardList from "./components/workspace/board/BoardList";
+import Home from "./components/workspace/Home";
+import Boards from "./components/workspace/sections/Boards";
+import Board from "./components/board/Board";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="workspace" element={<WorkSpace />}>
-          <Route path="boards" element={<BoardList />} />
+        <Route path="home" element={<Home />}>
+          <Route path="boards" element={<Boards/>} />
         </Route>
+        <Route path="board/:boardId" element={<Board />} />
       </Routes>
     </BrowserRouter>
   );

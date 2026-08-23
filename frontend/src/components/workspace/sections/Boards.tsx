@@ -74,7 +74,7 @@ const CreateBoardCard: React.FC = () => {
   );
 };
 
-const BoardList: React.FC = () => {
+const Boards: React.FC = () => {
   return (
     <div className="flex flex-col gap-4">
       {/* Section title */}
@@ -107,4 +107,4 @@ const BoardList: React.FC = () => {
   );
 };
 
-export default BoardList;
+export default Boards;

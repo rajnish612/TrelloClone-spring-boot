@@ -1,8 +1,8 @@
 import React from "react";
 import LeftPanel from "./LeftPanel";
-import Dashboard from "./board/Dashboard";
+import Dashboard from "./Dashboard";
 
-const WorkSpace = () => {
+const Home = () => {
   return (
     <div className="flex min-h-screen w-full ">
       <LeftPanel />
@@ -11,4 +11,4 @@ const WorkSpace = () => {
   );
 };
 
-export default WorkSpace;
+export default Home;

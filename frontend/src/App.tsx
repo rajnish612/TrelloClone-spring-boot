@@ -1,11 +1,16 @@
-import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router";
 import WorkSpace from "./components/workspace/WorkSpace";
+import BoardList from "./components/workspace/board/BoardList";
 
 const App = () => {
   return (
-    <div>
-      <WorkSpace />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="workspace" element={<WorkSpace />}>
+          <Route path="boards" element={<BoardList />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 

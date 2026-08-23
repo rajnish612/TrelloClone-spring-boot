@@ -1,5 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import BoardList from "./BoardList";
+import { Outlet } from "react-router";
 
 const Dashboard = () => {
   // Placeholder workspace name — replace with real data when logic is added
@@ -21,7 +22,7 @@ const Dashboard = () => {
 
       {/* Board Section */}
       <div className="px-8 py-6">
-        <BoardList />
+        <Outlet />
       </div>
     </div>
   );
